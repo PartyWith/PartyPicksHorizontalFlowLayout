@@ -104,7 +104,7 @@ open class PartyPicksHorizontalFlowLayout : UICollectionViewFlowLayout {
             let indexPath = IndexPath(item: item, section: 0)
             
             let height = lineHeight - cellSpacing * 2
-            let annotation = delegate.collectionView(collectionView!, widthForPickAt: indexPath, withHeight: height)
+            let annotation = delegate.collectionView(collectionView!, widthForCellAt: indexPath, withHeight: height)
             let width = cellSpacing + annotation + cellSpacing
             let frame = CGRect(x: xOffset[line], y: yOffset[line], width: width, height: lineHeight)
             let insetFrame = frame.insetBy(dx: cellSpacing, dy: cellSpacing)
@@ -170,7 +170,7 @@ open class PartyPicksHorizontalFlowLayout : UICollectionViewFlowLayout {
     /**
      * Tells the flow layout which should be the width for a given cell.
      */
-    func collectionView(_ collectionView: UICollectionView, widthForPickAt indexPath: IndexPath, withHeight height: CGFloat) -> CGFloat
+    func collectionView(_ collectionView: UICollectionView, widthForCellAt indexPath: IndexPath, withHeight height: CGFloat) -> CGFloat
     
     /**
      * Tells the delegate when flow layout is all set.

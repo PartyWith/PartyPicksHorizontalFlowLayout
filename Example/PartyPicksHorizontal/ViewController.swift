@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         
         // If you choose to implement your flowLayout through Storyboard (just like I did in this tutorial),
         // then it's important to fill the delegate property up
-        if  let flowLayout = collection.collectionViewLayout as? PartyPicksVerticalFlowLayout {
+        if  let flowLayout = collection.collectionViewLayout as? PartyPicksHorizontalFlowLayout {
             // #warning: Your app will crash if you don't implement this property
             flowLayout.delegate = dataSource
             // Additional setups
@@ -56,7 +56,7 @@ class ViewControllerDataSource : NSObject, UICollectionViewDataSource {
 }
 
 // MARK: - Party Picks Flow Layout Delegate
-extension ViewControllerDataSource : PartyPicksVerticalFlowLayoutDelegate {
+extension ViewControllerDataSource : PartyPicksHorizontalFlowLayoutDelegate {
     
     func collectionView(_ collectionView: UICollectionView, widthForCellAt indexPath: IndexPath, withHeight height: CGFloat) -> CGFloat {
         let object = source[indexPath.row]
