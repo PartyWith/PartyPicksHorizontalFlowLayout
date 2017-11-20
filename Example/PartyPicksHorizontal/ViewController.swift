@@ -24,7 +24,7 @@ class ViewController: UIViewController {
             // Additional setups
             flowLayout.cellHeight = 40
             flowLayout.cellSpacing = 8
-            flowLayout.contentInset = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+            flowLayout.contentInset = UIEdgeInsets(top: 40, left: 20, bottom: 0, right: 20)
         }
     }
 }
