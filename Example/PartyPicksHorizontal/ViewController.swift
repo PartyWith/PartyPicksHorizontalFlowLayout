@@ -22,6 +22,7 @@ class ViewController: UIViewController {
             // #warning: Your app will crash if you don't implement this property
             flowLayout.delegate = dataSource
             // Additional setups
+            flowLayout.numberOfLines = 4
             flowLayout.cellHeight = 40
             flowLayout.cellSpacing = 8
             flowLayout.contentInset = UIEdgeInsets(top: 40, left: 20, bottom: 0, right: 20)
@@ -33,10 +34,7 @@ class ViewController: UIViewController {
 class ViewControllerDataSource : NSObject, UICollectionViewDataSource {
     
     private var source : [String] = [
-        "Amsterdam 🇳🇱", "New York 🇺🇸", "London 🇬🇧", "Berlin 🇩🇪", "Barcelona 🇪🇸", "Lisbon 🇵🇹", "Rio de Janeiro 🇧🇷", "Sydney 🇦🇺", "Paris 🇫🇷", "São Paulo 🇧🇷",
-        "Milan 🇮🇹", "Toronto 🇨🇦", "Bogotá 🇨🇴", "Moscow 🇷🇺", "San Francisco 🇺🇸", "Hague 🇳🇱", "Curitiba 🇧🇷", "Melbourne 🇦🇺", "Los Angeles 🇺🇸",
-        "New Delhi 🇮🇳", "Vienna 🇦🇹", "Lyon 🇫🇷", "Singapore 🇸🇬", "Zürich 🇨🇭", "Maceió 🇧🇷", "Cairo 🇪🇬", "Rehovot 🇮🇱", "Chicago 🇺🇸",
-        "Seoul 🇰🇷", "Taipei 🇹🇼", "Bruxelles 🇧🇪", "Shanghai 🇨🇳", "Marbella 🇪🇸", "Karachi 🇵🇰", "Istanbul 🇹🇷"
+        "420", "Afterwork drinks", "Arcade", "Bars", "Cigar", "Cigarettes", "Clubbing", "Cocktails", "Comedy", "Commercial house", "Country Music", "Craft beer", "Deep house", "Dive bars", "Don't drink", "Drinking", "Drum & bass", "Dubstep", "Electronic music", "Festival", "Food festivals", "Game night", "Garage", "Girls' night out", "Guys' night", "Hard dance", "Hip Hop", "House", "Indie", "Jazz", "Jungle", "Karaoke", "LGBT", "Latin", "Live music", "Metal", "Minimal", "Poker", "Punk", "Rap", "Reggae", "Reggaeton", "Rock", "Shisha", "Sports bars", "Techno", "Top 40", "Trance", "Trap", "Weeknights out", "Wine bars"
     ]
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
