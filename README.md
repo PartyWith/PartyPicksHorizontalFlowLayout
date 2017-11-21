@@ -7,7 +7,7 @@
 
 UICollectionViewFlowLayout used in PartyWith iOS App's Party Picks section (edit mode)
 
-<img src="http://felipe.ricieri.me/pods/pphfl.png" alt="Example">
+<img src="http://felipe.ricieri.me/pods/pphfl2.png" alt="Example">
 
 
 ## Installation
@@ -39,7 +39,7 @@ To run the example project, clone the repo. No Cocoapods setup needed, the files
 
 You can easily set your `UICollectionView`'s Flow Layout in your storyboard:
 
-<img src="http://felipe.ricieri.me/pods/ppvfl_sbs.png" alt="Storyboard settings">
+<img src="http://felipe.ricieri.me/pods/pphfl_sbs.png" alt="Storyboard settings">
 
 In your `UIViewController`, you'll **need** to implement the `delegate` property:
 
@@ -62,12 +62,11 @@ self.collectionView.collectionViewLayout = flowLayout
 Additionally you can configure some extra properties:
 
 ```swift
-let flowLayout = PartyPicksHorizontalFlowLayout(delegate: self) // Delegate is required
+let flowLayout = PartyPicksHorizontalFlowLayout(lines: 4, delegate: self) // Delegate is required
 self.collectionView.collectionViewLayout = flowLayout
 
-flowLayout.cellHeight = 50
-flowLayout.cellSpacing = 10
-flowLayout.contentInset = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+flowLayout.cellSpacing = 5
+flowLayout.contentInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
 ```
 
 If you chose to implement `PartyPicksHorizontalFlowLayout` via storyboard, you can custom these properties using the conditional cast operator:
@@ -75,9 +74,9 @@ If you chose to implement `PartyPicksHorizontalFlowLayout` via storyboard, you c
 ```swift
 if  let flowLayout = collection.collectionViewLayout as? PartyPicksHorizontalFlowLayout {
     // Customize your flow layout
-    flowLayout.cellHeight = 40
-    flowLayout.cellSpacing = 8
-    flowLayout.contentInset = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+    flowLayout.numberOfLines = 4
+    flowLayout.cellSpacing = 5
+    flowLayout.contentInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
 }
 ```
 
