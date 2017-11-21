@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "PartyPicksHorizontalFlowLayout"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "UICollectionViewFlowLayout used in PartyWith iOS App's Party Picks section"
 
   # This description is used to generate tags and improve search results.
