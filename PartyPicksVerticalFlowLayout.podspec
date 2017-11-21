@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint PartyPicksVerticalFlowLayout.podspec' to ensure this is a
+#  Be sure to run `pod spec lint PartyPicksHorizontalFlowLayout.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "PartyPicksVerticalFlowLayout"
-  s.version      = "1.0.1"
-  s.summary      = "UICollectionViewFlowLayout used in PartyWith iOS App's Party Picks section (edit mode)"
+  s.name         = "PartyPicksHorizontalFlowLayout"
+  s.version      = "1.0.0"
+  s.summary      = "UICollectionViewFlowLayout used in PartyWith iOS App's Party Picks section"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,11 +25,11 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-  UICollectionViewFlowLayout used in PartyWith iOS App's Party Picks section (edit mode). Now you can have the same behavior PartyWith has in Party Picks section (edit mode)!
+  UICollectionViewFlowLayout used in PartyWith iOS App's Party Picks section. Now you can have the same behavior PartyWith has in Party Picks section (edit mode)!
                    DESC
 
-  s.homepage     = "https://github.com/PartyWith/PartyPicksVerticalFlowLayout"
-  s.screenshots  = "http://felipe.ricieri.me/pods/ppvfl.png"
+  s.homepage     = "https://github.com/PartyWith/PartyPicksHorizontalFlowLayout"
+  s.screenshots  = "http://felipe.ricieri.me/pods/pphfl.png"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/PartyWith/PartyPicksVerticalFlowLayout.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/PartyWith/PartyPicksHorizontalFlowLayout.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
