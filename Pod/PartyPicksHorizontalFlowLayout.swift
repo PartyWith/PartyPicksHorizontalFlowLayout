@@ -29,11 +29,6 @@ open class PartyPicksHorizontalFlowLayout : UICollectionViewFlowLayout {
     open var cellSpacing : CGFloat = 5
     
     /**
-     * Cells height (default is 45px)
-     */
-    open var cellHeight : CGFloat = 45
-    
-    /**
      * Collection View content inset
      */
     open var contentInset : UIEdgeInsets = .zero
@@ -104,7 +99,6 @@ open class PartyPicksHorizontalFlowLayout : UICollectionViewFlowLayout {
             let indexPath = IndexPath(item: item, section: 0)
             
             let height = lineHeight - cellSpacing * 2
-            //let height = cellHeight
             let annotation = delegate.collectionView(collectionView!, widthForCellAt: indexPath, withHeight: height)
             let width = cellSpacing + annotation + cellSpacing
             let frame = CGRect(x: xOffset[line], y: yOffset[line], width: width, height: lineHeight)
