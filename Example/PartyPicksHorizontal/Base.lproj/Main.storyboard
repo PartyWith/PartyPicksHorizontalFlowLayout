@@ -13,22 +13,25 @@
         <!--View Controller-->
         <scene sceneID="4Ty-OD-tOr">
             <objects>
-                <viewController id="oy7-IL-C6m" customClass="ViewController" customModule="PartyPicksVertical" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oy7-IL-C6m" customClass="ViewController" customModule="PartyPicksHorizontal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HM9-7x-GBt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cq6-qA-LIb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="208.5" width="375" height="250"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tY5-IW-iIP" customClass="PartyPicksVerticalFlowLayout" customModule="PartyPicksVertical" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="4Ms-sF-JDS"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tY5-IW-iIP" customClass="PartyPicksHorizontalFlowLayout" customModule="PartyPicksHorizontal" customModuleProvider="target">
                                     <size key="itemSize" width="114" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="20"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="kvh-cb-GeJ" customClass="ExampleCollectionCell" customModule="PartyPicksVertical" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="kvh-cb-GeJ" customClass="ExampleCollectionCell" customModule="PartyPicksHorizontal" customModuleProvider="target">
                                         <rect key="frame" x="20" y="20" width="114" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -68,10 +71,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="cq6-qA-LIb" firstAttribute="centerX" secondItem="HM9-7x-GBt" secondAttribute="centerX" id="2Id-aZ-y4e"/>
                             <constraint firstItem="cq6-qA-LIb" firstAttribute="leading" secondItem="2hm-8f-Kax" secondAttribute="leading" id="Lx3-LK-uZv"/>
                             <constraint firstItem="cq6-qA-LIb" firstAttribute="trailing" secondItem="2hm-8f-Kax" secondAttribute="trailing" id="OHu-eD-RPp"/>
-                            <constraint firstItem="cq6-qA-LIb" firstAttribute="bottom" secondItem="2hm-8f-Kax" secondAttribute="bottom" id="f4W-dB-lnj"/>
-                            <constraint firstItem="cq6-qA-LIb" firstAttribute="top" secondItem="HM9-7x-GBt" secondAttribute="top" id="ubh-gc-178"/>
+                            <constraint firstItem="cq6-qA-LIb" firstAttribute="centerY" secondItem="HM9-7x-GBt" secondAttribute="centerY" id="X0G-tw-zWA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2hm-8f-Kax"/>
                     </view>
@@ -81,7 +84,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Naj-7h-ruP" sceneMemberID="firstResponder"/>
-                <customObject id="OTb-me-Vp0" customClass="ViewControllerDataSource" customModule="PartyPicksVertical" customModuleProvider="target"/>
+                <customObject id="OTb-me-Vp0" customClass="ViewControllerDataSource" customModule="PartyPicksHorizontal" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
