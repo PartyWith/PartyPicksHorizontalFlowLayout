@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cq6-qA-LIb">
-                                <rect key="frame" x="0.0" y="208.5" width="375" height="250"/>
+                                <rect key="frame" x="0.0" y="218.5" width="375" height="230"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="4Ms-sF-JDS"/>
+                                    <constraint firstAttribute="height" constant="230" id="4Ms-sF-JDS"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tY5-IW-iIP" customClass="PartyPicksHorizontalFlowLayout" customModule="PartyPicksHorizontal" customModuleProvider="target">
                                     <size key="itemSize" width="114" height="50"/>

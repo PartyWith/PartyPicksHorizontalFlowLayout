@@ -23,9 +23,9 @@ class ViewController: UIViewController {
             flowLayout.delegate = dataSource
             // Additional setups
             flowLayout.numberOfLines = 4
-            flowLayout.cellHeight = 40
-            flowLayout.cellSpacing = 8
-            flowLayout.contentInset = UIEdgeInsets(top: 40, left: 20, bottom: 0, right: 20)
+            flowLayout.cellHeight = 50
+            flowLayout.cellSpacing = 10
+            flowLayout.contentInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         }
     }
 }
