@@ -23,8 +23,7 @@ class ViewController: UIViewController {
             flowLayout.delegate = dataSource
             // Additional setups
             flowLayout.numberOfLines = 4
-            flowLayout.cellHeight = 50
-            flowLayout.cellSpacing = 10
+            flowLayout.cellSpacing = 5
             flowLayout.contentInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         }
     }
@@ -69,7 +68,7 @@ extension ViewControllerDataSource : PartyPicksHorizontalFlowLayoutDelegate {
         label.sizeToFit()
         
         var rect = label.intrinsicContentSize
-        rect.width += 32 // Padding
+        rect.width += 40 // Padding
         let newWidth = rect.width.rounded()
         
         return newWidth
